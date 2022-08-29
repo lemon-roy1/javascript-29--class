@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js dom summary</title>
+
+</head>
+<body>
+<h1>final Dom Event handlars</h1> 
+<h3 id="hanler-start">defole dye text</h3>   
+<button onclick="handleondClick()">Defolt text</button>
+<button id="event-listener">Handle by addEventListener</button>
+<script>
+    function handleondClick(){
+        const hanlerstart = document.getElementById('hanler-start');
+        hanlerstart.innerText= 'aj amar mone valo nai kano ja ';
+    }
+
+    document.getElementById('event-listener').addEventListener('click',function(){
+       const hanlerStart = document.getElementById('hanler-start')
+       hanlerStart.innerText ='kano tomar mon valo nai';
+    })
+</script>
+
+</body>
+</html>

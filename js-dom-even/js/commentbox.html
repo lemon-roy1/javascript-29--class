@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comment-box</title>
+</head>
+<body>
+    <div id="new-container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis hic aspernatur libero in iste aperiam suscipit, nihil labore est reprehenderit assumenda ut velit ullam officia itaque porro ab inventore omnis reiciendis recusandae ad magnam. Ipsam accusamus officiis corporis consectetur tempora! Accusamus ratione cumque ipsa quidem eligendi adipisci ad aperiam doloribus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis hic aspernatur libero in iste aperiam suscipit, nihil labore est reprehenderit assumenda ut velit ullam officia itaque porro ab inventore omnis reiciendis recusandae ad magnam. Ipsam accusamus officiis corporis consectetur tempora! Accusamus ratione cumque ipsa quidem eligendi adipisci ad aperiam doloribus?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam corrupti quos nobis ab? Dignissimos natus nobis ipsam qui eius harum veniam, explicabo excepturi animi, magni quibusdam ab neque. Qui ullam perspiciatis accusantium assumenda odio voluptates quam, et sint optio maxime omnis doloribus? Neque repudiandae quos illo ipsa inventore eveniet animi.</p>
+    </div>
+    <div>
+        <textarea name="" id="commit-btn" cols="30" rows="5"></textarea>
+        <br>
+        <button id="post-btn">post</button>
+    </div>
+
+    <script>
+        document.getElementById('post-btn').addEventListener('click',function(){
+            const titalbtn = document.getElementById('commit-btn');
+            const nawCommeit = titalbtn.value;
+
+            const newcontainer = document.getElementById('new-container');
+            const p = document.createElement('p')
+            p.innerText =nawCommeit;
+            newcontainer.appendChild(p);
+           titalbtn.value= '';
+        })
+    </script>
+</body>
+</html>

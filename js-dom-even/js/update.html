@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update </title>
+</head>
+<body>
+    <p id="input-text">ka ka aco </p>
+    <input id="raid-type" type="tyepe">
+    <button id="tape-btn">make up</button>
+    <script>
+        document.getElementById('tape-btn').addEventListener("click",function(){
+            const raidtype = document.getElementById('raid-type')
+           const inputText = raidtype.value;
+
+           const p = document.getElementById('input-text');
+            p.innerText = inputText;
+            raidtype.value = '';
+        })
+    </script>
+</body>
+</html>
